@@ -34,11 +34,11 @@ sudo systemctl start httpd
 sudo systemctl enable httpd
 
 ### 4. Criação de Snapshot
-Dentro do console, segue o caminho: EC2 --> Volumes --> Create Snapshot
+Dentro do console, segue o caminho: EC2 -> Volumes -> Create Snapshot
 
 Ele funciona como o **backup do EBS** permitindo restauração futura. 
 
 ### 5. Encerramento da instância (MUITO IMPORTANTE!!!)
 
-EC2 --> Instances --> Selecione --> Terminate
+EC2 -> Instances -> Selecione -> Terminate
 O snapshot vai permanecer salvo. 

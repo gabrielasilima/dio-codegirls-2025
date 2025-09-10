@@ -24,3 +24,21 @@ O objetivo foi **consolidar os conhecimentos em gerenciamento de instâncias EC2
 No terminal:
 bash
 ssh -i "minha-chave.pem" ec2-user@<IP_DA_INSTANCIA>
+
+### 3. Atualização e Instalação de Pacotes
+
+Dentro da instância:
+sudo yum update -y
+sudo yum install httpd -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
+
+### 4. Criação de Snapshot
+Dentro do console, segue o caminho: EC2 --> Volumes --> Create Snapshot
+
+Ele funciona como o **backup do EBS** permitindo restauração futura. 
+
+### 5. Encerramento da instância (MUITO IMPORTANTE!!!)
+
+EC2 --> Instances --> Selecione --> Terminate
+O snapshot vai permanecer salvo. 
